@@ -42,3 +42,45 @@ public class MainForm extends JFrame {
 					MainForm frame = new MainForm();
 					frame.setVisible(true);
 	}
+         /**
+	 * Объявление метода, в котором объявляются элементы экранной формы, ее события
+	 */
+	public MainForm() {
+		ImageIcon icon2 = new ImageIcon(MainForm.class.getResource("/home.png"));
+		ImageIcon icon3 = new ImageIcon(MainForm.class.getResource("/production.png"));
+		/**
+		 * Создание главной панели
+		 */
+		TitledBorder titledBorder = BorderFactory.createTitledBorder(null, "Выберите необходимый вам калькулятор:", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, new Font("times new roman",Font.PLAIN,15), Color.black);
+		JPanel contentPane = new JPanel();
+		/**
+		 * Отключение автоматичского размещения компонентов на панели
+		 */
+		contentPane.setLayout(null);
+		contentPane.setBorder(titledBorder);
+		JPanel Panel1 = new JPanel();
+		/**
+		 * указывает координаты верхней левой вершины окна, а также его ширину и высоту.
+		 */
+		Panel1.setBounds(50,15,500,650);
+		JPanel Panel2 = new JPanel();
+		/**
+		 * Устанавливаем иконку для главной формы
+		 * 
+		 */
+		setIconImage(icon1.getImage());
+		/**
+		 * Отключение автоматичского размещения компонентов на панели
+		 */
+		Panel2.setLayout(null);
+		/**
+		 * указывает координаты верхней левой вершины окна, а также его ширину и высоту.
+		 */
+		Panel2.setBounds(5,15,650,650);
+		/**
+		 * Задание шрифта и размера надписей для кнопок
+		 */
+		Font font = new Font("Times New Roman", Font.PLAIN, 25);
+		/**
+		 * Создание кнопок
+		 */
