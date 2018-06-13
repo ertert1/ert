@@ -26,6 +26,6 @@ public class CalcTest3{
 			/**
 			   * Проверка того установлен ли шрифт для кнопки
 			   */
-		  assertFalse(ComponentForm.btnNewButton.isFontSet());
+		  assertTrue(ComponentForm.btnNewButton.isFontSet());
 	}
 }
