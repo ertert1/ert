@@ -89,9 +89,9 @@ public class ComponentForm extends JFrame {
 		frame.setVisible(true);
 		/**
 		 * Запрещаем масштабировать окно
-		 
+		 */
 		frame.setResizable(false);
-		
+		/*
 		 * Добавляем иконку
 		 */ 
                 frame.setIconImage(MainForm.icon1.getImage());
