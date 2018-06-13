@@ -26,6 +26,6 @@ public class CalcTest4{
 			/**
 			   * Проверяем ли есть возможность масштабировать главную форму.
 			   */
-		assertFalse(ComponentForm.frame.isNotResizable());
+		assertTrue(ComponentForm.frame.isResizable());
 	}
 }
