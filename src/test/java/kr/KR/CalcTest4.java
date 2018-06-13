@@ -5,7 +5,7 @@ package kr.KR;
 /**
  * Добавление библиотек для проверки результата теста.
  */
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import org.junit.jupiter.api.BeforeEach;
 /**
@@ -19,22 +19,13 @@ public class CalcTest4{
 	 */
     @BeforeEach
    void setUp() {
-    	new Calculation();
+    	new ComponentForm();
     }
-	/**
-	 * Создание тестовых методов.
-	 */
 	@Test
-	void testn1() {
-		/**
-		 * Максимальная мощность 300.
-		 * Напряжение сети 220.
-		 * Необхожимый коэфицент для расчёта 1.2.
-		 */
-		  float k1=(float)320,r1=220;
+	void testn4() {
 			/**
-			   * Проверяем верное ли значение получается в итоге рассчетов номинала в электрической цепи.
+			   * Проверяем ли есть возможность масштабировать главную форму.
 			   */
-	    assertEquals((float)1.8, Calculation.sums(k1, r1));
+		assertFalse(ComponentForm.frame.isResizable());
 	}
 }
