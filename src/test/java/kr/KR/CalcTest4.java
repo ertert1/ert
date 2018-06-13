@@ -13,7 +13,7 @@ import org.junit.jupiter.api.BeforeEach;
  */
 import org.junit.jupiter.api.Test;
 
-public class CalcTest1{
+public class CalcTest4{
 	/**
 	 * Создание тестовых методов.
 	 */
