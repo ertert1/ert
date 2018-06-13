@@ -15,17 +15,4 @@ import org.junit.jupiter.api.Test;
 
 public class CalcTest4{
 	/**
-	 * Создание тестовых методов.
-	 */
-    @BeforeEach
-   void setUp() {
-    	new ComponentForm();
-    }
-	@Test
-	void testn4() {
-			/**
-			   * Проверяем ли есть возможность масштабировать главную форму.
-			   */
-		assertFalse(ComponentForm.frame.isResizable());
-	}
-}
+	 * Созд
