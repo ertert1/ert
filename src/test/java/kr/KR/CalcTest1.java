@@ -31,10 +31,10 @@ public class CalcTest1{
 		 * Напряжение сети 220.
 		 * Необхожимый коэфицент для расчёта 1.2.
 		 */
-		  float k1=(float)330,r1=220;
+		  float k1=(float)330,r1=380;
 			/**
 			   * Проверяем верное ли значение получается в итоге рассчетов номинала в электрической цепи.
 			   */
-	    assertEquals((float)2, Calculation.sums(k1, r1));
+	    assertEquals((float)1.8, Calculation.sums(k1, r1));
 	}
 }
